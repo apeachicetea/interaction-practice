@@ -26,10 +26,12 @@ a {
 
 .global-nav {
     height: 44px;
+    padding: 0 1rem;
 }
 
 .local-nav {
     height: 52px;
+    padding: 0 1rem;
     border-bottom: 1px solid #ddd;
 }
 
@@ -61,4 +63,48 @@ a {
 
 .local-nav-links a:not(.product-name) {
     margin-left: 2em;
+}
+
+.scroll-section {
+    padding-top: 35vh;
+}
+
+#scroll-section-0 h1 {
+    font-size: 4rem;
+    text-align: center;
+}
+
+.main-message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3em;
+    font-size: 2.5rem;
+    margin-top: 0.5rem;
+}
+
+.main-message p {
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.description {
+    padding: 0 1rem;
+    font-size: 1.2rem;
+    color: #888
+}
+
+/* rem vs em
+현재 html font-size: 14px; */
+/* em의 경우, 해당 단위가 사용되고 있는 요소의 font-size 속성 값이 기준이 됩니다. */
+/* rem에서 r은 root, 즉 최상위 요소를font-size 속성 값 의미합니다. HTML에서 최상위 요소는 <html> 입니다. 따라서 rem 경우, html 요소의 font-size 속성 값이 기준이 됩니다. */
+
+.description strong {
+    float: left;
+    /* 0.2em = 42 x 0.2 = 8.4px; */
+    margin-right: 0.2em;
+    /* 3rem = 14 x 3 = 42px; */
+    font-size: 3rem;
+    color: rgb(29, 29, 31);
 }
